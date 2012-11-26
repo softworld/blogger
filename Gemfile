@@ -36,3 +36,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "paperclip"
+gem "haml-rails"
+gem "sorcery"

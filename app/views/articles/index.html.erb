@@ -1,7 +1,9 @@
 <h1>All Articles</h1>
 <ul>
 	<% @articles.each do |article| %>
-	  <li><%= link_to article.title, article_path(article), class: 'article_title', id: "article_#{article.id}" %></li>
+	  <li><%= link_to article.title, article_path(article), class: 'article_title', id: "article_#{article.id}" %>
+	  	Tags: <%= tag_links(article.tags) %>
+	  </li>
 	  
 	<% end %>
 </ul>
